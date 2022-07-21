@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        * {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-group">
+        <h4>tính tiền lương</h4>
+        <div class="form-group">
+            <p>Tiền lương 1 giò</p>
+            <input id="tienLuong1h" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+            <p>Số giờ làm</p>
+            <input id="soGioLam" class="form-control w-25" />
+        </div>
+        <br />
+    </div>
+    <button onClick="tinhTienLuong()" id="btntinhTien" class="btn btn-success">Tính tiền</button>
+    <div class="mt-2 alert alert-success">
+        Kết quả:<span id="tongLuong"></span>
+    </div>
+
+
+    <div class="form-group">
+        <h4>tính tbc</h4>
+        <div class="form-group">
+            <p>số thứ nhất</p>
+            <input id="s1" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+            <p>số thứ 2</p>
+            <input id="s2" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+            <p>số thứ 3</p>
+            <input id="s3" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+            <p>số thứ 4</p>
+            <input id="s4" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+            <p>số thư 5</p>
+            <input id="s5" class="form-control w-25" />
+        </div>
+        <br />
+    </div>
+    <button onClick="tinhTbc()" id="btntinhTbc" class="btn btn-success">Tính tbc</button>
+    <div class="mt-2 alert alert-success">
+        Kết quả:<span id="tongTbc"></span>
+    </div>
+
+
+    <div class="form-group">
+        <h4>tính p,s hcn</h4>
+        <div class="form-group">
+            <p>nhập chiều dài</p>
+            <input id="CD" class="form-control w-25" />
+        </div>
+        <br />
+        <div class="form-group">
+            <p>nhập chiều rộng</p>
+            <input id="CR" class="form-control w-25" />
+        </div>
+        <br />
+    </div>
+    <button onClick="tinhChuviDientich()" id="btntinhTien" class="btn btn-success">Tính</button>
+    <div class="mt-2 alert alert-success">
+        Kết quả chu vi:<span id="chuVi"></span>
+    </div>
+    <div class="mt-2 alert alert-success">
+        Kết quả dien tich:<span id="dienTich"></span>
+    </div>
+
+
+    <div class="form-group">
+        <h4>Bảng đổi tiền </h4>
+        <div class="form-group">
+            <p>Nhập số</p>
+            <input id="tienDo" class="form-control w-25" />
+        </div>
+        <br />
+    </div>
+    <button onClick="doiTie()" id="btntinhTien" class="btn btn-success">Tính tiền đổi</button>
+    <div class="mt-2 alert alert-success">
+        Kết quả:<span id="tongLuon"></span> VND
+    </div>
+
+    
+    <div class="form-group">
+        <h4>Bảng tính ký số</h4>
+        <div class="form-group">
+            <p>Nhập 2 chữ số</p>
+            <input id="kySo" class="form-control w-25" />
+        </div>
+        <br />
+    </div>
+    <button onClick="kySo()" id="btntinhTien" class="btn btn-success">Tổng 2 ký số</button>
+    <div class="mt-2 alert alert-success">
+        Kết quả:<span id="result"></span>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
